@@ -14,6 +14,20 @@ body {
     height: 100%;
 }
 
+/* components for left and right box */
+.main-container .row .recipient.active,
+.main-container .row .recipient {
+    background: yellow;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 2px;
+}
+
+.main-container .row .recipient.active p,
+.main-container .row .recipient p {
+    margin-bottom: 0 !important;
+}
+
 /* ------------------------------------------------------ left box ------------------------------------------------------------*/
 .main-container .row .left-box {
     height: 100vh;
@@ -21,22 +35,7 @@ body {
     padding-left: 25px;
     padding-right: 15px;
     overflow: auto;
-    /* max-height: 100vh; */
 }
-
-.left-box .recipient.active,
-.left-box .recipient {
-    background: yellow;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-bottom: 2px;
-}
-
-.left-box #chat-1 .recipient.active p,
-.left-box #chat-1 .recipient p {
-    margin-bottom: 0 !important;
-}
-
 
 
 /* ------------------------------------------------------ middle box ------------------------------------------------------------*/
@@ -47,3 +46,11 @@ body {
 
 
 /* ------------------------------------------------------ right box ------------------------------------------------------------*/
+
+.main-container .row .right-box {
+    height: 100vh;
+    background-color: #F2F2F2;
+    padding-left: 15px;
+    padding-right: 25px;
+    overflow: auto;
+}
