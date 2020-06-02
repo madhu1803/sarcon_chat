@@ -15,9 +15,9 @@ body {
 }
 
 /* components for left and right box */
+
 .main-container .row .recipient.active,
 .main-container .row .recipient {
-    background: yellow;
     padding-top: 8px;
     padding-bottom: 8px;
     margin-bottom: 2px;
@@ -26,6 +26,10 @@ body {
 .main-container .row .recipient.active p,
 .main-container .row .recipient p {
     margin-bottom: 0 !important;
+}
+
+.main-container .row .recipient.active {
+    background: yellow;
 }
 
 /* ------------------------------------------------------ left box ------------------------------------------------------------*/
@@ -37,11 +41,31 @@ body {
     overflow: auto;
 }
 
-
 /* ------------------------------------------------------ middle box ------------------------------------------------------------*/
+.main-container .row .middle-box {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
+.middle-box .message-header {
+    height: 8vh;
+    width: 100%;
+    background-color: aqua;
+}
 
+.middle-box .messages-box {
+    height: 82vh;
+    width: 100%;
+    background-color: yellow;
+    overflow: auto;
+}
 
+.middle-box .typing-box {
+    height: 10vh;
+    width: 100%;
+    background-color: green;
+}
 
 
 
