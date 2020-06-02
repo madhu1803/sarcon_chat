@@ -7,6 +7,7 @@ body {
 
 .main-container {
     height: 100%;
+    overflow: hidden;
 }
 
 .main-container .row {
@@ -14,9 +15,27 @@ body {
 }
 
 /* ------------------------------------------------------ left box ------------------------------------------------------------*/
-.main-container .row .left-box {}
+.main-container .row .left-box {
+    height: 100vh;
+    background-color: #F2F2F2;
+    padding-left: 25px;
+    padding-right: 15px;
+    overflow: auto;
+    /* max-height: 100vh; */
+}
 
+.left-box .recipient.active,
+.left-box .recipient {
+    background: yellow;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 2px;
+}
 
+.left-box #chat-1 .recipient.active p,
+.left-box #chat-1 .recipient p {
+    margin-bottom: 0 !important;
+}
 
 
 
