@@ -3,6 +3,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+
 }
 
 .main-container {
@@ -67,6 +68,13 @@ body {
     width: 100%;
     background-color: #FBFBFB;
     overflow: auto;
+}
+
+.middle-box .messages-box .sender-message {
+    width: 40%;
+    border: 1px solid;
+    margin: 25px;
+    padding: 8px;
 }
 
 .middle-box .typing-box {
