@@ -68,6 +68,7 @@ body {
     width: 100%;
     background-color: #FBFBFB;
     overflow: auto;
+
 }
 
 .middle-box .messages-box .sender-message {
@@ -75,6 +76,14 @@ body {
     border: 1px solid;
     margin: 25px;
     padding: 8px;
+}
+
+.middle-box .messages-box .receiver-message {
+    width: 40%;
+    border: 1px solid;
+    margin: 25px;
+    padding: 8px;
+
 }
 
 .middle-box .typing-box {
