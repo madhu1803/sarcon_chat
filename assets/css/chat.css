@@ -42,6 +42,10 @@ body {
 }
 
 /* ------------------------------------------------------ middle box ------------------------------------------------------------*/
+.col-md-6 {
+    padding: 0 !important;
+}
+
 .main-container .row .middle-box {
     height: 100vh;
     display: flex;
@@ -51,20 +55,32 @@ body {
 .middle-box .message-header {
     height: 8vh;
     width: 100%;
-    background-color: aqua;
+    background-color: #2D2E33;
+}
+
+.middle-box .message-header p {
+    color: white;
 }
 
 .middle-box .messages-box {
     height: 82vh;
     width: 100%;
-    background-color: yellow;
+    background-color: #FBFBFB;
     overflow: auto;
 }
 
 .middle-box .typing-box {
+    border-top: 1px solid lightgray;
     height: 10vh;
     width: 100%;
-    background-color: green;
+    background-color: #FBFBFB;
+    padding: 15px;
+}
+
+.middle-box .typing-box .typing-input .input-box {
+    width: 100%;
+    border: 1px solid #B2B3B6 !important;
+    padding: 10px;
 }
 
 
@@ -77,4 +93,5 @@ body {
     padding-left: 15px;
     padding-right: 25px;
     overflow: auto;
+
 }
