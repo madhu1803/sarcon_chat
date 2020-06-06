@@ -119,7 +119,7 @@ body {
   width: 50%;
   border-radius: 10px;
   margin: 25px;
-  padding: 10px 15px;
+  padding: 10px 25px;
   background-image: linear-gradient(
     90deg,
     #2096f3 10%,
@@ -128,11 +128,15 @@ body {
   );
   color: white;
   box-shadow: 5px 10px #e0e0e0;
+  display: flex;
+  flex-direction: column;
 }
+
 .middle-box .messages-box .sender-message h6,
 .middle-box .messages-box .receiver-message h6 {
   font-weight: 700;
 }
+
 .middle-box .messages-box .sender-message p,
 .middle-box .messages-box .receiver-message p {
   margin-bottom: 0 !important;
