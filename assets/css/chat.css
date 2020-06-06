@@ -60,7 +60,7 @@ body {
   height: 100vh;
   background-color: #f2f2f2;
   padding-left: 25px;
-  padding-right: 15px;
+  padding-right: 25px;
   overflow: auto;
 }
 
@@ -87,6 +87,7 @@ body {
   height: 8vh;
   width: 100%;
   background-color: #2d2e33;
+  position: relative;
 }
 
 .middle-box .message-header p {
@@ -95,6 +96,11 @@ body {
 }
 .middle-box .message-header p i {
   color: #3197f3;
+}
+
+.middle-box .message-header .fa-window-close {
+  position: absolute;
+  right: 40px;
 }
 
 /* messages box */
@@ -200,6 +206,12 @@ body {
   }
 
   .right-box {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .middle-box .fa-window-close {
     display: none;
   }
 }

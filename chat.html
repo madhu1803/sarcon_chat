@@ -25,7 +25,7 @@
                     <hr>
                 </div>
                 <div id="chat-1">
-                    <div class="recipient active">
+                    <div class="recipient active" onclick="openChat()">
                         <p><i class="fa fa-comments ml-1 mr-3" aria-hidden="true"></i>Madhumithaa</p>
                     </div>
                     <div class="recipient">
@@ -55,7 +55,8 @@
             <div class="col-lg-6 middle-box">
                 <!-- message header -->
                 <div class="message-header">
-                    <p><i class="fa fa-comments ml-1 mr-2" aria-hidden="true"></i>General chat</p>
+                    <p><i class="fa fa-comments ml-1 mr-2" aria-hidden="true"></i>General chat<i
+                            class="fas fa-window-close" onclick="closeChat()"></i></p>
                 </div>
                 <!-- messages-box -->
                 <div class="messages-box">
