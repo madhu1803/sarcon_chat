@@ -90,6 +90,10 @@ body {
 
 .middle-box .message-header p {
   color: white;
+  padding: 20px;
+}
+.middle-box .message-header p i {
+  color: #3197f3;
 }
 
 .middle-box .messages-box {
