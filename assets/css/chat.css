@@ -1,116 +1,141 @@
 html,
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 .main-container .row {
-    height: 100%;
+  height: 100%;
 }
 
 /* components for left and right box */
 
+.main-container .row .left-box .chatroom-header p,
+.main-container .row .right-box .online-users-header p {
+  color: #828181;
+}
+
+.main-container .row .left-box hr,
+.main-container .row .right-box hr {
+  margin-bottom: 0.4rem !important;
+}
+
 .main-container .row .recipient.active,
 .main-container .row .recipient {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-bottom: 2px;
+  padding: 15px;
+  margin-bottom: 2px;
+}
+
+.main-container .row .recipient.active {
+  background-image: linear-gradient(
+    90deg,
+    #2096f3 10%,
+    #409de2 30%,
+    #4ebeda 60%
+  );
 }
 
 .main-container .row .recipient.active p,
 .main-container .row .recipient p {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-.main-container .row .recipient.active {
-    background: yellow;
+.main-container .row .recipient p {
+  color: #828181;
+}
+
+.main-container .row .recipient.active p {
+  color: white;
 }
 
 /* ------------------------------------------------------ left box ------------------------------------------------------------*/
 .main-container .row .left-box {
-    height: 100vh;
-    background-color: #F2F2F2;
-    padding-left: 25px;
-    padding-right: 15px;
-    overflow: auto;
+  height: 100vh;
+  background-color: #f2f2f2;
+  padding-left: 25px;
+  padding-right: 15px;
+  overflow: auto;
+}
+
+.main-container .row .recipient p i {
+  color: #3197f3;
+}
+.main-container .row .recipient.active p i {
+  color: white;
 }
 
 /* ------------------------------------------------------ middle box ------------------------------------------------------------*/
 .col-md-6 {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .main-container .row .middle-box {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .middle-box .message-header {
-    height: 8vh;
-    width: 100%;
-    background-color: #2D2E33;
+  height: 8vh;
+  width: 100%;
+  background-color: #2d2e33;
 }
 
 .middle-box .message-header p {
-    color: white;
+  color: white;
 }
 
 .middle-box .messages-box {
-    height: 82vh;
-    width: 100%;
-    background-color: #FBFBFB;
-    overflow: auto;
-
+  height: 82vh;
+  width: 100%;
+  background-color: #fbfbfb;
+  overflow: auto;
 }
 
 .middle-box .messages-box .sender-message {
-    width: 40%;
-    border: 1px solid;
-    margin: 25px;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
+  width: 40%;
+  border: 1px solid;
+  margin: 25px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .middle-box .messages-box .receiver-message {
-    width: 40%;
-    border: 1px solid;
-    margin: 25px;
-    padding: 8px;
-    display: flex;
-    flex-direction: column-reverse;
+  width: 40%;
+  border: 1px solid;
+  margin: 25px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .middle-box .typing-box {
-    border-top: 1px solid lightgray;
-    height: 10vh;
-    width: 100%;
-    background-color: #FBFBFB;
-    padding: 15px;
+  border-top: 1px solid lightgray;
+  height: 10vh;
+  width: 100%;
+  background-color: #fbfbfb;
+  padding: 15px;
 }
 
 .middle-box .typing-box .typing-input .input-box {
-    width: 100%;
-    border: 1px solid #B2B3B6 !important;
-    padding: 10px;
+  width: 100%;
+  border: 1px solid #b2b3b6 !important;
+  padding: 10px;
 }
-
-
 
 /* ------------------------------------------------------ right box ------------------------------------------------------------*/
 
 .main-container .row .right-box {
-    height: 100vh;
-    background-color: #F2F2F2;
-    padding-left: 15px;
-    padding-right: 25px;
-    overflow: auto;
-
+  height: 100vh;
+  background-color: #f2f2f2;
+  padding-left: 15px;
+  padding-right: 25px;
+  overflow: auto;
 }
