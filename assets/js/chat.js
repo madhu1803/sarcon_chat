@@ -4,6 +4,12 @@ function ToggleChatRoom(chatroom_id, chat_id) {
     });
 }
 
+window.onresize = function (event) {
+    $('.left-box').css("display", "block");
+    $('.right-box').css("display", "block");
+    $('.middle-box').css("display", "block");
+};
+
 // openchat
 function openChat() {
 
