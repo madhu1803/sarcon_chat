@@ -12,10 +12,13 @@ window.onresize = function (event) {
 
 // openchat
 function openChat() {
+    width = $(window).width();
+    if (width <= 992) {
+        $('.left-box').css("display", "none");
+        $('.right-box').css("display", "none");
+        $('.middle-box').css("display", "block");
+    }
 
-    $('.left-box').css("display", "none");
-    $('.right-box').css("display", "none");
-    $('.middle-box').css("display", "block");
 
 }
 
