@@ -8,6 +8,7 @@ function ToggleChatRoom(chatroom_id, chat_id) {
 function openChat() {
 
     $('.left-box').css("display", "none");
+    $('.right-box').css("display", "none");
     $('.middle-box').css("display", "block");
 
 }
@@ -16,6 +17,15 @@ function openChat() {
 function closeChat() {
 
     $('.middle-box').css("display", "none");
+    $('.right-box').css("display", "none");
     $('.left-box').css("display", "block");
 
+}
+
+// display online users
+function displayOnlineUsers() {
+
+    $('.left-box').css("display", "none");
+    $('.middle-box').css("display", "none");
+    $('.right-box').css("display", "block");
 }

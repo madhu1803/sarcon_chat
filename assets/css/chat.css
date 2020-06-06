@@ -55,6 +55,13 @@ body {
   color: white;
 }
 
+.main-container .row .left-box .online-users-icon {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font-size: 30px;
+}
+
 /* ------------------------------------------------------ left box ------------------------------------------------------------*/
 .main-container .row .left-box {
   height: 100vh;
@@ -212,6 +219,9 @@ body {
 
 @media (min-width: 992px) {
   .middle-box .fa-window-close {
+    display: none;
+  }
+  .left-box .fa-users {
     display: none;
   }
 }
