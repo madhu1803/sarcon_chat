@@ -30,6 +30,7 @@ body {
 .main-container .row .recipient {
   padding: 15px;
   margin-bottom: 2px;
+  position: relative;
 }
 
 .main-container .row .recipient.active {
@@ -138,4 +139,12 @@ body {
   padding-left: 15px;
   padding-right: 25px;
   overflow: auto;
+}
+
+.main-container .row .recipient.active .company-name,
+.main-container .row .recipient .company-name {
+  position: absolute;
+  font-size: 13px;
+  left: 60px;
+  top: 42px;
 }
